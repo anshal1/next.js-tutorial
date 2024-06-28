@@ -1,8 +1,10 @@
-export default async function Page() {
+const page = async () => {
   await new Promise((resolve) => {
     setTimeout(() => {
       resolve(null);
     }, 2000);
   });
-  return <p>Customer Page</p>;
-}
+  return <div>Customer Profile Page</div>;
+};
+
+export default page;
